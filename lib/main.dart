@@ -22,95 +22,95 @@ class RuncloudLogo extends StatelessWidget {
         backgroundColor: RuncloudLogo.PrimaryColor,
         body: Stack(
           children: <Widget>[
-            cloud(
+            cloudShape(
               top: 13,
               left: 0.5,
               width: 320.0,
               height: 100.0,
               radius: 50.0,
             ),
-            cloud(
+            cloudShape(
               top: 10,
               left: 3,
               width: 120.0,
               height: 120.0,
               radius: 60.0,
             ),
-            cloud(
+            cloudShape(
               top: 8.5,
               left: 8.5,
               width: 150.0,
               height: 150.0,
               radius: 75.0,
             ),
-            line(
+            lineShape(
               top: 10.2,
               left: 15.0,
               width: 100.0,
               color: Colors.white,
             ),
-            line(
+            lineShape(
               top: 10.2,
               left: 24.5,
               width: 55.0,
               color: Colors.white,
             ),
-            line(
+            lineShape(
               top: 11.06,
               left: 18.5,
               width: 55.0,
               color: RuncloudLogo.PrimaryColor,
             ),
-            line(
+            lineShape(
               top: 11.9,
               left: 17.5,
               width: 100.0,
               color: Colors.white,
             ),
-            line(
+            lineShape(
               top: 11.9,
               left: 27,
               width: 20.0,
               color: Colors.white,
             ),
-            line(
+            lineShape(
               top: 11.9,
               left: 29.8,
               width: 40.0,
               color: Colors.white,
             ),
-            line(
+            lineShape(
               top: 12.78,
               left: 19.5,
               width: 120.0,
               color: RuncloudLogo.PrimaryColor,
             ),
-            line(
+            lineShape(
               top: 13.65,
               left: 20,
               width: 145.0,
               color: Colors.white,
             ),
-            line(
+            lineShape(
               top: 14.54,
               left: 21.5,
               width: 120.0,
               color: RuncloudLogo.PrimaryColor,
             ),
-            line(
+            lineShape(
               top: 15.43,
               left: 22,
               width: 90.0,
               color: Colors.white,
             ),
-            title(),
+            runcloudTitle(),
           ],
         ),
       ),
     );
   }
 
-  Widget cloud(
+  Widget cloudShape(
       {double top, double left, double width, double height, double radius}) {
     return Positioned(
       top: RuncloudLogo.scaler.getHeight(top),
@@ -135,7 +135,7 @@ class RuncloudLogo extends StatelessWidget {
     );
   }
 
-  Widget line({double top, double left, double width, dynamic color}) {
+  Widget lineShape({double top, double left, double width, dynamic color}) {
     return Positioned(
       top: RuncloudLogo.scaler.getHeight(top),
       left: RuncloudLogo.scaler.getWidth(left),
@@ -159,7 +159,7 @@ class RuncloudLogo extends StatelessWidget {
     );
   }
 
-  Widget title() {
+  Widget runcloudTitle() {
     return Positioned(
       top: RuncloudLogo.scaler.getHeight(20),
       left: RuncloudLogo.scaler.getWidth(1.7),
