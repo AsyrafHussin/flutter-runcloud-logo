@@ -5,5 +5,5 @@ Runcloud Logo using Flutter
 [Visit Runcloud website](https://runcloud.io)
 
 <div align="center">
-   <img src="screenshot.jpg" width="400" />
+   <img src="screenshot.jpg" width="300" />
 </div>
